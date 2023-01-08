@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3f3b0f6-8df0-42ff-a7f6-35b4adfb24ab" name="Changes" comment="Mejoras">
-      <change afterPath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/config/JmsConfig.java" afterDir="false" />
+    <list default="true" id="f3f3b0f6-8df0-42ff-a7f6-35b4adfb24ab" name="Changes" comment="Se agrega version final valida">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/listeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/receiver/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/ConsumerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/ConsumerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa-consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa-consumer/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa-publisher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa-publisher/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa-publisher/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa-publisher/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,8 +106,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ConsumerApplication" />
         <item itemvalue="Spring Boot.PublisherApplication" />
+        <item itemvalue="Spring Boot.ConsumerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673199076504</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se agrega version final valida">
+      <created>1673200431970</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673200431970</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +154,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mejoras" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mejoras" />
+    <MESSAGE value="Se agrega version final valida" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrega version final valida" />
   </component>
 </project>
