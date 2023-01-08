@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3f3b0f6-8df0-42ff-a7f6-35b4adfb24ab" name="Changes" comment="Mejoras en los mensajes de los logs">
-      <change afterPath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/listeners/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/util/Mapper.java" afterDir="false" />
+    <list default="true" id="f3f3b0f6-8df0-42ff-a7f6-35b4adfb24ab" name="Changes" comment="Se agrega DTO para recivir los mensajes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/config/JmsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/receiver/Listener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/config/JmsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/config/JmsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/receiver/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/receiver/Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa-publisher/target/classes/com/java/publisher/dispatcher/MessageSenderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/msa-publisher/target/classes/com/java/publisher/dispatcher/MessageSenderImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,25 +40,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConsumerApplication">
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="consumer" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.java.consumer.ConsumerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PublisherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="publisher" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.java.publisher.PublisherApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.publisher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+      <item itemvalue="Spring Boot.PublisherApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ConsumerApplication" />
+        <item itemvalue="Spring Boot.PublisherApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
