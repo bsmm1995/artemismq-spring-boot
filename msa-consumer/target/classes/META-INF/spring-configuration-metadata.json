@@ -1,0 +1,14 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "queue.name",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "topic.name",
+      "type": "java.lang.String"
+    }
+  ],
+  "hints": []
+}
