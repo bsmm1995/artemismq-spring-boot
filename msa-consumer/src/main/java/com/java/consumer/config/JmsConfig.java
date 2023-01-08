@@ -1,35 +1,33 @@
 package com.java.consumer.config;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer;
-import org.springframework.context.annotation.Bean;
+import com.java.consumer.dto.EmailDTO;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
-import org.springframework.jms.config.JmsListenerContainerFactory;
-import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
+import org.springframework.jms.support.converter.MessageConversionException;
 import org.springframework.jms.support.converter.MessageConverter;
-import org.springframework.jms.support.converter.MessageType;
 
-import javax.jms.ConnectionFactory;
+import javax.jms.JMSException;
+import javax.jms.MapMessage;
+import javax.jms.Message;
+import javax.jms.Session;
+import java.util.UUID;
 
 @Configuration
-public class JmsConfig {
+public class JmsConfig implements MessageConverter {
 
-    @Bean
-    public JmsListenerContainerFactory<?> queueConnectionFactory(@Qualifier("jmsConnectionFactory") ConnectionFactory connectionFactory,
-                                                                 DefaultJmsListenerContainerFactoryConfigurer configurer) {
-        DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
-        configurer.configure(factory, connectionFactory);
-        factory.setPubSubDomain(false);
-        factory.setMessageConverter(jacksonJmsMsgConverter());
-        return factory;
+    @Override
+    public Message toMessage(Object object, Session session) throws JMSException, MessageConversionException {
+        EmailDTO employee = (EmailDTO) object;
+        MapMessage message = session.createMapMessage();
+        message.setString("id", employee.getId().toString());
+        message.setString("header", employee.getHeader());
+        message.setString("body", employee.getBody());
+        message.setInt("code", employee.getCode());
+        return message;
     }
 
-    @Bean
-    public MessageConverter jacksonJmsMsgConverter() {
-        MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
-        converter.setTargetType(MessageType.TEXT);
-        converter.setTypeIdPropertyName("_type");
-        return converter;
+    @Override
+    public Object fromMessage(Message message) throws JMSException, MessageConversionException {
+        MapMessage map = (MapMessage) message;
+        return new EmailDTO(UUID.fromString(map.getString("id")), map.getString("header"), map.getString("body"), map.getInt("code"));
     }
 }

@@ -4,15 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3f3b0f6-8df0-42ff-a7f6-35b4adfb24ab" name="Changes" comment="">
+    <list default="true" id="f3f3b0f6-8df0-42ff-a7f6-35b4adfb24ab" name="Changes" comment="Mejoras en los mensajes de los logs">
+      <change afterPath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/listeners/Listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/util/Mapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa-publisher/src/main/java/com/java/publisher/config/JMSConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa-publisher/src/main/java/com/java/publisher/config/JMSConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa-publisher/src/main/java/com/java/publisher/dispatcher/MessageSenderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa-publisher/src/main/java/com/java/publisher/dispatcher/MessageSenderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/config/JmsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa-consumer/src/main/java/com/java/consumer/receiver/Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/config/JmsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/config/JmsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/receiver/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/msa-consumer/target/classes/com/java/consumer/receiver/Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa-publisher/target/classes/com/java/publisher/dispatcher/MessageSenderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/msa-publisher/target/classes/com/java/publisher/dispatcher/MessageSenderImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,16 +40,23 @@
     </option>
   </component>
   <component name="ProjectId" id="2K1sTbe0K62LbqzmXCWon00dtum" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
