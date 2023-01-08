@@ -27,13 +27,13 @@ public class MessageSenderImpl implements MessageSender {
     @Override
     public void publishQueue(EmailDTO data) {
         jmsTemplate.convertAndSend(queueName, data);
-        log.info("Message Sent: " + data);
+        log.info("Message sent to queue: " + data);
     }
 
     @Override
     public void publishTopic(EmailDTO data) {
         jmsTemplate.setPubSubDomain(true);
         jmsTemplate.convertAndSend(topicName, data);
-        log.info("Message Sent: " + data);
+        log.info("Message sent to topic: " + data);
     }
 }

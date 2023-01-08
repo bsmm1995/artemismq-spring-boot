@@ -10,7 +10,6 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 @EnableJms
 public class JMSConfig {
-
     @Bean
     public MessageConverter jacksonJmsMsgConverter() {
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();

@@ -10,16 +10,16 @@ import org.springframework.stereotype.Component;
 public class Listener {
     @JmsListener(destination = "${queue.name}", containerFactory = "queueConnectionFactory")
     public void consume(EmailDTO data) {
-        log.info("Received Message: " + data);
+        log.info("Message sent from queue: " + data);
     }
 
     @JmsListener(destination = "${topic.name}", containerFactory = "queueConnectionFactory")
     public void consumeTopicOne(EmailDTO data) {
-        log.info("Received Message Topic1: " + data);
+        log.info("Message sent from Topic1: " + data);
     }
 
     @JmsListener(destination = "${topic.name}", containerFactory = "queueConnectionFactory")
     public void consumeTopicTwo(EmailDTO data) {
-        log.info("Received Message Topic2: " + data);
+        log.info("Message sent from Topic2: " + data);
     }
 }
