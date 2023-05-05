@@ -3,12 +3,12 @@ package com.java.consumer.receiver;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.java.consumer.dto.EmailDTO;
 import com.java.consumer.util.Mapper;
+import jakarta.jms.Message;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.activemq.artemis.jms.client.ActiveMQTextMessage;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Service;
 
-import javax.jms.Message;
 
 @Service
 @Slf4j
